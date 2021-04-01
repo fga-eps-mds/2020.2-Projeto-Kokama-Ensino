@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html xml:lang>
+
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cadastrar História</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class='header'>
+    </div>
+
+    <div class='box-history'>
+        {% block content %} 
+
+        <form action='' method='POST'>
+            {% csrf_token %}
+
+            {% for error in form.history_title.errors %}
+            <p style="color: red">{{ error }}</p>
+            {% endfor %}
+
+            <div class='input-box'>
+                {{ form.history_text }}
+                <label>Título:</label>
+            </div>
+
+            {% for error in form.history_text.errors %}
+            <p style="color: red">{{ error }}</p>
+            {% endfor %}
+
+            <div class='input-box'>
+                {{ form.history_text }}
+                <label>Texto:</label>
+            </div>
+            <input class='submit-buttom' name="submit" type="submit" value='Enviar'>
+            {% endblock %}
+    </div>
+</body>
+
+</html>

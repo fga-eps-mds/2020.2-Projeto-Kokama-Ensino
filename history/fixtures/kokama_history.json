@@ -1,0 +1,82 @@
+[
+    {
+        "model": "history.kokamahistory",
+        "pk": 1,
+        "fields": {
+            "history_title": "O mito do elefante",
+            "history_text": "Quando eu era pequeno um elefante mordeu a minha perna, desde então eu tenho uma perna. O meu avô falava que em terra de monoperna quem tem duas pernas errei. Pera aí, é rei?"
+        }
+    },
+    {
+        "model": "history.kokamahistory",
+        "pk": 2,
+        "fields": {
+            "history_title": "Bla Bla Bla",
+            "history_text": "Bla bla bla bla, bla bla. \nBla, bla bla bla bla. Bla bla bla , bla?\n - Bla: bla bla! bla bla."
+        }
+    },
+    {
+        "model": "history.kokamahistory",
+        "pk": 3,
+        "fields": {
+            "history_title": "O patinho feio",
+            "history_text": "Era uma manhã de verão, e uma pata havia botado cinco ovos. Ela estava aguardando impaciente a chegada de seus filhotinhos.\nAssim, quando o primeiro ovo se partiu, mamãe pata ficou muito contente. Logo os outros patinhos também começaram a nascer. Mas havia um ovo que demorou para se quebrar, deixando-a ansiosa.\nPassado algum tempo, o último filhote finalmente conseguiu sair do ovo. Mas quando mamãe pata o viu, ela não ficou muito satisfeita e exclamou:\n- Esse patinho é muito diferente, muito feio. Não pode ser meu filho!\n- Ah! Alguém te pregou uma peça. Disse a galinha que morava ali por perto.\nO tempo foi passando e o patinho feio foi ficando cada vez mais feio, cada vez mais diferente de seus irmãos e cada vez mais isolado. Os outros animais zombavam dele, o que o deixava entristecido e angustiado.\nEntão, quando o inverno chegou, o patinho resolveu partir. Ele andou bastante e encontrou uma casa, assim, resolveu entrar pensando que lá talvez alguém gostasse dele. Foi o que aconteceu. Havia um homem que o acolheu, assim, o patinho passou esse tempo muito bem.\nMas, esse homem tinha também um gato, que um dia levou o pato para fora de casa, deixando-o sozinho e triste novamente.\nO patinho saiu caminhando e depois de muito andar encontrou um lugar muito bonito, com um lago. O pato viu um cantinho aconchegante e foi até lá descansar. Nesse momento, algumas crianças que estavam por perto, perceberam a chegada de uma nova figura. Elas ficaram encantadas e disseram:\n- Vejam, temos um visitante!\n- Nossa! E como é lindo!\nO patinho não entendeu de quem as crianças estavam falando, mas quando ele se aproximou do lago e viu seu reflexo na água, avistou um maravilhoso cisne. Então, ao olhar para o lado, ele se deu conta de que outros cisnes também moravam ali.\nDessa forma, o patinho descobriu que na verdade, ele era um cisne. Desde então, ele passou a viver entre seus iguais e não ficou mais angustiado."
+        }
+    },
+    {
+        "model": "history.kokamahistory",
+        "pk": 4,
+        "fields": {
+            "history_title": "A história curta",
+            "history_text": "Fim."
+        }
+    },
+    {
+        "model": "history.kokamahistory",
+        "pk": 5,
+        "fields": {
+            "history_title": "No restaurante",
+            "history_text": "Era uma manhã de verão, e uma pata havia botado cinco ovos. Ela estava aguardando impaciente a chegada de seus filhotinhos.\nAssim, quando o primeiro ovo se partiu, mamãe pata ficou muito contente. Logo os outros patinhos também começaram a nascer. Mas havia um ovo que demorou para se quebrar, deixando-a ansiosa.\nPassado algum tempo, o último filhote finalmente conseguiu sair do ovo. Mas quando mamãe pata o viu, ela não ficou muito satisfeita e exclamou:\n- Esse patinho é muito diferente, muito feio. Não pode ser meu filho!\n- Ah! Alguém te pregou uma peça. Disse a galinha que morava ali por perto.\nO tempo foi passando e o patinho feio foi ficando cada vez mais feio, cada vez mais diferente de seus irmãos e cada vez mais isolado. Os outros animais zombavam dele, o que o deixava entristecido e angustiado.\nEntão, quando o inverno chegou, o patinho resolveu partir. Ele andou bastante e encontrou uma casa, assim, resolveu entrar pensando que lá talvez alguém gostasse dele. Foi o que aconteceu. Havia um homem que o acolheu, assim, o patinho passou esse tempo muito bem.\nMas, esse homem tinha também um gato, que um dia levou o pato para fora de casa, deixando-o sozinho e triste novamente.\nO patinho saiu caminhando e depois de muito andar encontrou um lugar muito bonito, com um lago. O pato viu um cantinho aconchegante e foi até lá descansar. Nesse momento, algumas crianças que estavam por perto, perceberam a chegada de uma nova figura. Elas ficaram encantadas e disseram:\n- Vejam, temos um visitante!\n- Nossa! E como é lindo!\nO patinho não entendeu de quem as crianças estavam falando, mas quando ele se aproximou do lago e viu seu reflexo na água, avistou um maravilhoso cisne. Então, ao olhar para o lado, ele se deu conta de que outros cisnes também moravam ali.\nDessa forma, o patinho descobriu que na verdade, ele era um cisne. Desde então, ele passou a viver entre seus iguais e não ficou mais angustiado."
+        }
+    },
+    {
+        "model": "history.kokamahistory",
+        "pk": 6,
+        "fields": {
+            "history_title": "E tinha a cabeça cheia deles",
+            "history_text": "Todos os dias, ao primeiro sol da manhã, mãe e filha sentavam-se na soleira da porta. E deitada a cabeça da filha no colo da mãe, começava esta a catar-lhe piolhos.\nOs dedos ágeis conheciam sua tarefa. Como se vissem, patrulhavam a cabeleira separando mechas, esquadrinhando entre os fios, expondo o claro azulado do couro. E na alternância ritmada de suas pontas macias, procuravam os minúsculos inimigos, levemente arranhando com as unhas, em carícia de cafuné.\nCom o rosto metido no escuro pano da saia da mãe, vertidos os cabelos sobre a testa, a filha deixava-se ficar enlanguescida, enquanto a massagem tamborilada daqueles dedos parecia penetrar-lhe a cabeça, e o calor crescente da manhã lhe entrefechava os olhos.\nFoi talvez devido à modorra que a invadia, entrega prazerosa de quem se submete a outros dedos, que nada percebeu naquela manhã – a não ser, talvez, uma leve pontada – quando a mãe, devassando gulosa o secreto reduto da nuca, segurou seu achado entre polegar e indicador e, puxando-o ao longo do fio negro e lustroso em gesto de vitória, extraiu-lhe o primeiro pensamento."
+        }
+    },
+    {
+        "model": "history.kokamahistory",
+        "pk": 7,
+        "fields": {
+            "history_title": "A raposa e o leão",
+            "history_text": "Tinha a Raposa o seu covil bem fechado e estava lá dentro a gemer, porque estava doente; chegou à porta um Leão e perguntou-lhe como estava, e que a deixasse entrar, porque a queria lamber, que tinha virtude na língua, e lambendo-a, logo havia de sarar.\nRespondeu a Raposa de dentro:\n— Não posso abrir, nem quero. Creio que a tua língua tem virtude; porém é tão má vizinhança a dos dentes, que lhe tenho grande medo, e portanto antes quero sofrer com o meu mal."
+        }
+    },
+    {
+        "model": "history.kokamahistory",
+        "pk": 8,
+        "fields": {
+            "history_title": "O burro e a cobra",
+            "history_text": "Como recompensa por um serviço prestado, os homens pediram a Júpiter a eterna juventude, o que ele concedeu. Pegou na juventude, pô-la em cima de um Burro e mandou que a levasse aos homens.\nIndo o Burro no seu caminho, chega a um ribeiro com sede, onde estava uma Cobra que disse que não o deixaria beber daquela água se não lhe desse o que levava às costas. O Burro, que não sabia o valor do que transportava, deu-lhe a juventude a troco da água. E assim os homens continuaram a envelhecer, e as Cobras renovando-se a cada ano."
+        }
+    },
+    {
+        "model": "history.kokamahistory",
+        "pk": 9,
+        "fields": {
+            "history_title": "A cigarra e a formiga",
+            "history_text": "Havia uma cigarra que passou todo o verão a cantar, aproveitando os agradáveis fins de tarde e curtindo o tempo de forma despreocupada.\nMas quando chegou o gelado inverno, a cigarra já não estava alegre, pois estava faminta e tremendo de frio.\nAssim, foi pedir ajuda à formiga, que havia trabalhado muito no verão. Pediu que a colega lhe desse alimento e abrigo. Ao que a formiga perguntou:\nO que você fez durante todo o verão?\n— Estive a cantar - respondeu a cigarra.\nE a formiga lhe deu uma resposta grosseira:\n— Pois então, agora dance!"
+        }
+    },
+    {
+        "model": "history.kokamahistory",
+        "pk": 10,
+        "fields": {
+            "history_title": "O rato e a rã",
+            "history_text": "Um Rato desejava atravessar um rio, mas tinha medo, pois não sabia nadar. Pediu então ajuda a uma Rã, que se ofereceu para o levar para o outro lado desde que se prendesse a uma das suas patas.\nO Rato concordou e, encontrando um pedaço de fio, prendeu uma das suas pernas à Rã. Mas, mal entraram no rio, a Rã mergulhou, tentando afogar o Rato. Este, por sua vez, debatia-se com a Rã para se manter à superfície. Estavam os dois nestes trabalhos e canseiras quando passou por cima um Milhafre que, vendo o Rato sobre a água, baixou sobre ele e levou-o nas garras juntamente com Rã. Ainda no ar, comeu-os a ambos."
+        }
+    }
+]

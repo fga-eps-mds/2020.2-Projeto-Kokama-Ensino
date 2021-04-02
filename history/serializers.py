@@ -1,8 +1,6 @@
 from rest_framework import serializers
 from .models import KokamaHistory
 
-
-
 class KokamaHistorySerializer(serializers.ModelSerializer):
     class Meta:
         model = KokamaHistory

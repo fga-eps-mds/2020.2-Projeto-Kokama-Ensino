@@ -19,6 +19,15 @@ body {
     transition: .5s;
 }
 
+#history-list {
+    margin-top: 30px;
+  }
+
+#history-title{
+    font-size: 20px;
+    line-height: 30px;
+}
+
 .input-box input {
     width: 100%;
     padding: 10px 0;
@@ -173,6 +182,7 @@ body {
     color: #000000;
     letter-spacing: 1px;
     left: 0;
+    margin-bottom: 40px;
 }
 
 .icon {
@@ -186,6 +196,7 @@ body {
 .title-box {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .add-buttom {
@@ -209,15 +220,4 @@ body {
     background-color: #FFFFFF;
     border: 1px solid #F23232;
     color: #000000;
-}
-
-.list-word {
-    font-size: 16px;
-    color: #000000;
-    letter-spacing: 1px;
-    left: 0;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-decoration: none;
-    padding-left: 10px;
 }

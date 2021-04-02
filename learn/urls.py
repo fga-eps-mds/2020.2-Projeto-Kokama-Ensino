@@ -24,5 +24,6 @@ router.register(r'', KokamaHistoryViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('historias/', include(router.urls)),
     path('',include('history.urls')),
 ]

@@ -1,3 +1,9 @@
 from django.shortcuts import render
+from rest_framework import viewsets, mixins
+from .models import KokamaHistory
+from .serializers import KokamaHistorySerializer
 
-# Create your views here.
+
+class KokamaHistoryViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
+    queryset = KokamaHistory.objects.all()
+    serializer_class = KokamaHistorySerializer

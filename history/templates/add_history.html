@@ -1,5 +1,5 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 <html xml:lang>
 
 
@@ -12,12 +12,12 @@
 
 <body>
     <div class='header'>
-        <a href="/traducao/lista_de_palavras/">
+        <a href="/adicionar-historias/">
             <img alt class='logo'
                 src='https://github.com/fga-eps-mds/2020.2-Projeto-Kokama-Wiki/raw/main/docs/assets/img/logo.png'>
         </a>
 
-        <a class='logo-text' href="/traducao/lista_de_palavras/">Projeto Kokama</a>
+        <a class='logo-text' href="/adicionar-historias/">Projeto Kokama</a>
     </div>
 
     <div class='box-history'>
@@ -31,7 +31,7 @@
             {% endfor %}
 
             <div class='input-box'>
-                {{ form.history_text }}
+                {{ form.history_title }}
                 <label>Título:</label>
             </div>
 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html xml:lang>
+
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lista de História</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class='header'>
+        <a href="/lista-de-historias/">
+            <img alt class='logo'
+                src='https://github.com/fga-eps-mds/2020.2-Projeto-Kokama-Wiki/raw/main/docs/assets/img/logo.png'>
+        </a>
+
+        <a class='logo-text' href="/lista-de-historias/">Projeto Kokama</a>
+    </div>
+    <div class='box-list'>
+
+        <div class='title-box'>
+            <h1 class='box-title'>Lista de histórias</h1>
+            <a class='add-buttom' href="/adicionar-historias/">Adicionar História</a>
+        </div>
+
+        {% for item in object %}
+        <div class='history-list'>
+            <a class='history_title'->{{item}}</a>
+        </div>
+
+        {% empty %}
+        <div class='history-list'>
+            <a class='history-list'>Não há histórias cadastradas</a>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+
+</html>
+</div>

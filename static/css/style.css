@@ -65,8 +65,6 @@ body {
     border-radius: 7px;
     line-height:30px;
     text-decoration: none;
-    text-decoration: none;
-    /*! text-decoration: none; */
 }
 
 .box-history{
@@ -261,12 +259,10 @@ body {
     letter-spacing: 1px;
     left: 0;
     margin-top: 3px;
-    margin-bottom: 3px;
     padding-left: 8px;
     padding-right: 8px;
     text-decoration: none;
     background-color: #F23232;
-    align-items: center;
     border-radius: 7px;
     align-items: right;
     align-content: center;

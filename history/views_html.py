@@ -5,13 +5,10 @@ from .forms import AddNewHistory
 from .models import KokamaHistory
 
 
-@require_http_methods(["GET", "POST"])
+@require_http_methods(["GET"])
 def list_history (request):
     if(request.method == 'GET'):
-        history_title = KokamaHistory.objects.all()
-        context = {
-            'history_title': history_title,
-        }
+        history_title = KokamaHistory.objects.all() 
         return render(request, 'list_history.html',{'object':history_title})
     else:
         return HttpResponse('<h1>Erro interno do servidor</h1>', status=500)
@@ -31,7 +28,7 @@ def add_history(request):
             history.save()
             return redirect('/')
         
-@require_http_methods(["GET", "POST"])
+@require_http_methods(["GET"])
 def views_history(request, id):
     if(request.method == 'GET'):
         kokama = get_object_or_404(KokamaHistory, pk=id)
@@ -47,7 +44,7 @@ def views_history(request, id):
     else:
         return HttpResponse('<h1>Erro interno do servidor</h1>', status=500)
 
-@require_http_methods(["GET", "POST"])
+@require_http_methods(["GET"])
 def del_history(request, id):
     if(request.method == 'GET'):
         emp = KokamaHistory.objects.get(pk = id)

@@ -221,3 +221,50 @@ body {
     border: 1px solid #F23232;
     color: #000000;
 }
+
+.add-buttom-edit {
+    display: inline;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    left: 0;
+    right: 20000px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 8px;
+    text-decoration: none;
+    background-color: #F23232;
+    align-items: unset;
+    border-radius: 7px;
+}
+
+.add-buttom-edit:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #F23232;
+    color: #000000;
+}
+
+.add-buttom-delete {
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    left: 0;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-decoration: none;
+    background-color: #F23232;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.add-buttom-delete:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #F23232;
+    color: #000000;
+}

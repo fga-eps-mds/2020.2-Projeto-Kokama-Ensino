@@ -13,7 +13,6 @@ def list_history (request):
     else:
         return HttpResponse('<h1>Erro interno do servidor</h1>', status=500)
 
-@require_http_methods(["GET", "POST"])
 def add_history(request):
     if(request.method == 'GET'):
         form = AddNewHistory()
@@ -53,7 +52,6 @@ def del_history(request, id):
 
     return HttpResponse('Erro ao deletar', status=500)
 
-@require_http_methods(["GET", "POST"])
 def edit_history(request, id):
 
     if(request.method == 'GET'):

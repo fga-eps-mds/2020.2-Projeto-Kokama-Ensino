@@ -27,6 +27,6 @@ router.register(r'atividades', ActivityViewSet, basename="activities")
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', login),
-    path('historia/lista_de_historias', list_story),
+    path('historias/', list_story),
     path('historia/', include(router.urls)),
 ]

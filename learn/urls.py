@@ -18,7 +18,7 @@ from django.urls import path
 from rest_framework import routers
 from django.conf.urls import include, url
 from exercise.views import ActivityViewSet
-from story.views import list_story
+from story.views import StoryList, StoryView
 from .views import login
 
 router = routers.DefaultRouter()
@@ -27,6 +27,8 @@ router.register(r'atividades', ActivityViewSet, basename="activities")
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', login),
-    path('historias/', list_story),
+    url(r'^historias/$', StoryList.as_view()),
+    url(r'^historias/(?P<pk>[0-9]+)/$', StoryView.as_view()),
+    url(r'^historias/(?P<pk>[0-9]+)/delete$', StoryView.as_view()),
     path('historia/', include(router.urls)),
 ]

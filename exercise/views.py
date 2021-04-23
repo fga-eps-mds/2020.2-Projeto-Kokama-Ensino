@@ -6,16 +6,21 @@ from .serializers import ActivitySerializer
 import time
 from decouple import config
 import random
+from rest_framework.response import Response
+from rest_framework.permissions import IsAdminUser
 from rest_framework.status import (
     HTTP_500_INTERNAL_SERVER_ERROR,
 )
-from rest_framework.response import Response
 
 
 random.seed(time.time())
 
+class IsSuperUser(IsAdminUser):
+    def has_permission(self, request, view):
+        return bool(request.user and request.user.is_superuser)
 
 class ActivityViewSet(viewsets.ModelViewSet):
+    permission_classes = (IsSuperUser,)
     queryset = Activity.objects.all()
     serializer_class = ActivitySerializer
 

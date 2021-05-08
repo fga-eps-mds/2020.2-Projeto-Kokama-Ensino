@@ -22,7 +22,8 @@ from story.views import StoryViewSet
 
 router = routers.DefaultRouter()
 router.register(r'atividades', ActivityViewSet, basename="activities")
-router.register(r'lista_de_historias', StoryViewSet, basename="stories")
+router.register(r'lista_de_historias', StoryViewSet, basename="story_list")
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),

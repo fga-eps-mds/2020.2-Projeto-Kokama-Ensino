@@ -4,3 +4,5 @@ migrations/
 **.env
 db.sqlite3
 .coverage
+htmlcov/
+db.sqlite3-journal

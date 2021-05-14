@@ -12,5 +12,6 @@ class ExerciseConfig(AppConfig):
         from exercise.views import ActivityViewSet
         scheduler = BackgroundScheduler()
         activity = ActivityViewSet()
-        scheduler.add_job(activity.generate_random_exercises, "cron", day_of_week="sun", hour=0, id="update_activities", replace_existing=True)
+        # scheduler.add_job(activity.run, "interval", minutes = 1, id="update_activities", replace_existing=True)
+        scheduler.add_job(activity.run, "cron", day_of_week="sun", hour=0, id="update_activities", replace_existing=True)
         scheduler.start()

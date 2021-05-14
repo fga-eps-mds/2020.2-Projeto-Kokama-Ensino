@@ -8,6 +8,7 @@ from decouple import config
 import random
 from rest_framework.status import (
     HTTP_500_INTERNAL_SERVER_ERROR,
+    HTTP_200_OK,
 )
 from rest_framework.response import Response
 
@@ -21,20 +22,15 @@ class ActivityViewSet(viewsets.ReadOnlyModelViewSet):
 
     remove_chars = set([',', '.', '<', '>'])
 
-    def _get_data(self):
-        url = '{base_url}/{parameter}'.format(base_url = config('TRANSLATE_MICROSERVICE_URL'), parameter = 'traducao/frases')
-        response = requests.get(url)
-        response.raise_for_status()
-        return response.json()
+    def get_data(self, url):
+        try:
+            response = requests.get(url)
+        except Exception:
+            return Response(status=HTTP_500_INTERNAL_SERVER_ERROR)
+        return response
 
 
-    def _clean_database(self):
-        Contain.objects.all().delete()
-        Option.objects.all().delete()
-        Activity.objects.all().delete()
-
-
-    def _add_possible_options(self, kokama_phrase):
+    def add_possible_options(self, kokama_phrase):
         options = []
         for untreated_option in kokama_phrase.split():
             word = ''.join([c for c in untreated_option if c not in self.remove_chars])
@@ -45,32 +41,46 @@ class ActivityViewSet(viewsets.ReadOnlyModelViewSet):
 
         return options
 
-
-    def generate_random_exercises(self):
+    def generate_random_exercises(self, url):
+        view_set = ActivityViewSet()
         random.seed(time.time())
         try:
-            phrases = self._get_data()
+            phrases = view_set.get_data(url).json()
         except Exception:
-            return
-        self._clean_database()
+            return Response(status=HTTP_500_INTERNAL_SERVER_ERROR)
+        
+        # SQLite does not handle many operations at once
+        for contain in Contain.objects.all():
+            contain.delete()
+        for option in Option.objects.all():
+            option.delete()
+        for activity in Activity.objects.all():
+            activity.delete()
 
         for phrase in phrases:
-            activity = Activity(phrase_portuguese=phrase['phrase_portuguese'], phrase_kokama=phrase['phrase_kokama'])
-            activity.save()
+            activity = Activity.objects.create(phrase_portuguese=phrase['phrase_portuguese'], phrase_kokama=phrase['phrase_kokama'])
 
-            options = self._add_possible_options(phrase['phrase_kokama'])
-
-            correct_option_word = random.choice(options)
-            correct_option = Option.objects.filter(option=correct_option_word)[0]
+            options = view_set.add_possible_options(activity.phrase_kokama)
+            correct_option = random.choice(options)
             activity.options.add(correct_option)
 
-        for phrase in phrases:
-            activity = Activity.objects.filter(phrase_portuguese=phrase['phrase_portuguese'], phrase_kokama=phrase['phrase_kokama'])[0]
-            correct_option = activity.options.all()[0]
-            options_list = random.sample(list(Option.objects.exclude(option=correct_option)), 3)
+        for activity in Activity.objects.all():
+            correct_option = str(activity.options.all().first())
+            filtered_options = []
 
+            for option in Option.objects.exclude(option=correct_option):
+                if activity.phrase_kokama.find(str(option)) == -1:
+                    filtered_options.append(option)
+
+            options_list = random.sample(filtered_options, 3)
             for option in options_list:
                 activity.options.add(option)
+
             activity.save()
 
-        return redirect('atividades/')
+        return Response(status=HTTP_200_OK)
+
+
+    def run(self):
+        url = '{base_url}/{parameter}'.format(base_url = config('TRANSLATE_MICROSERVICE_URL'), parameter = 'frases/')
+        self.generate_random_exercises(url)
